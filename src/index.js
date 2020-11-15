@@ -1,4 +1,4 @@
 import ReactDOM from 'react-dom';
-import Greetings from "./Greetings";
+import GreetingCard from "./GreetingCard";
 
-ReactDOM.render(<Greetings />, document.getElementById('root'));
+ReactDOM.render(<GreetingCard />, document.getElementById('root'));
