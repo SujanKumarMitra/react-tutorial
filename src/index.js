@@ -3,15 +3,18 @@
 
 import React from 'react';
 import ReactDOM from "react-dom";
-
 const rootTag = document.getElementById('root');
 
 
-const firstName = "Sujan";
-const lastName = "Mitra";
+const name = "Sujan Kumar Mitra";
+const date = new Date();
+const dateString = date.toLocaleDateString();
+const timeString = date.toLocaleTimeString();
 ReactDOM.render(
 	<>
-	<h1>{firstName} {lastName}</h1>
+		<h1>My name is {name}</h1>
+		<p>Today's date:: {dateString}</p>
+		<p>Current Time:: {timeString}</p>
 	</>,
 	rootTag
 );
