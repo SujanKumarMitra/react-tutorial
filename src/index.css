@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    color: red;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
