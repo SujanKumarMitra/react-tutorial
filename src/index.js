@@ -4,17 +4,14 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 
+const rootTag = document.getElementById('root');
+
+
+const firstName = "Sujan";
+const lastName = "Mitra";
 ReactDOM.render(
 	<>
-		<h1>OTT Picks</h1>
-		<p>List</p>
-		<ul>
-			<li>Sacred Games</li>
-			<li>Mirzapur</li>
-			<li>Silicon Valley</li>
-			<li>Mr. Robot</li>
-			<li>Family Man</li>
-		</ul>
+	<h1>{firstName} {lastName}</h1>
 	</>,
-	document.getElementById('root')
+	rootTag
 );
