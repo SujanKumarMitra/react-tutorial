@@ -1,4 +1,4 @@
 import ReactDOM from 'react-dom';
-import ButtonCounter from './components/ButtonCounter'
+import Time from './components/Time';
 
-ReactDOM.render(<ButtonCounter />, document.getElementById("root"));
+ReactDOM.render(<Time />, document.getElementById('root'));
