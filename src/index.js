@@ -1,4 +1,4 @@
 import ReactDOM from 'react-dom';
-import ButtonCounter from './components/ButtonCounter';
+import App from './components/App';
 
-ReactDOM.render(<ButtonCounter />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
