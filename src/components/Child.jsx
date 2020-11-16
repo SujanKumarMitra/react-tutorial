@@ -1,15 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Name } from './Parent'
 export default function Child() {
+
+    const fullName = useContext(Name);
+
     return (
-        <>
-            <Name.Consumer>
-                {(fullName) => {
-                    return (
-                        <h2>Child consumed = '{fullName}'</h2>
-                    );
-                }}
-            </Name.Consumer>
-        </>
+        <h2>Child consumed = '{fullName}'</h2>
     );
 }

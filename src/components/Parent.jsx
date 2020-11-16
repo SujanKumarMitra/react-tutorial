@@ -4,7 +4,7 @@ import Child from './Child';
 export const Name = createContext();
 
 export default function Parent() {
-    const fullName = 'sujan';
+    const fullName = 'sujan kr';
     return (
         <>
             <Name.Provider value={fullName}>
