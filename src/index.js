@@ -1,4 +1,4 @@
 import ReactDOM from 'react-dom';
-import Time from './components/Time';
+import Form from './components/Form';
 
-ReactDOM.render(<Time />, document.getElementById('root'));
+ReactDOM.render(<Form />, document.getElementById('root'));
