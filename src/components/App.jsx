@@ -1,11 +1,16 @@
 import React from 'react';
-import Pokemon from './Pokemon';
+import { Route, Switch } from 'react-router-dom';
+import About from './About';
+import Contact from './Contact';
 
 export default function App() {
 
-    return (
-        <>
-            <Pokemon />
-        </>
-    );
+  return (
+    <>
+      <Switch>
+        <Route path="/(about|)" component={About} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </>
+  );
 }
