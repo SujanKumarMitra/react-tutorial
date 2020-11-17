@@ -1,7 +1,7 @@
-import { AppBar, IconButton, Toolbar, Typography, MenuItem } from '@material-ui/core';
+import { AppBar, IconButton, MenuItem, Toolbar, Typography } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -14,12 +14,12 @@ export default function Navbar() {
                     <Typography variant="h6" >
                         Navbar
                     </Typography>
-                    <Link to='/about' style={{ color: 'inherit', textDecoration:'none' }} >
+                    <NavLink to='/about' style={{ color: 'inherit', textDecoration:'none' }} >
                         <MenuItem >About</MenuItem>
-                    </Link>
-                    <Link to='/contact' style={{ color: 'inherit', textDecoration:'none' }} >
+                    </NavLink>
+                    <NavLink to='/contact' style={{ color: 'inherit', textDecoration:'none' }} >
                         <MenuItem >Contact</MenuItem>
-                    </Link>
+                    </NavLink>
                 </Toolbar>
             </AppBar>
         </>

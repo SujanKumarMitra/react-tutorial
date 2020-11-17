@@ -10,8 +10,8 @@ export default function App() {
     <>
       <Switch>
         <Route exact path="/" component={Navbar} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/about" render={() => <About name='sujan' />} />
+        <Route exact path="/contact" render={() => <Contact name='kumar' />} />
       </Switch>
     </>
   );
