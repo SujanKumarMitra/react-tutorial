@@ -11,7 +11,7 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Navbar} />
         <Route exact path="/about" render={() => <About name='sujan' />} />
-        <Route exact path="/contact" render={() => <Contact name='kumar' />} />
+        <Route exact path="/contact/:id" render={() => <Contact name='kumar' />} />
       </Switch>
     </>
   );
